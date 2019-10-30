@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <div th:replace="head::head"></div>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" th:fragment="navbar">
+    <a class="navbar-brand" href="#"><span class="logo">Copy</span>book</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" sec:authorize="isAuthenticated()">
+            <li class="nav-item">
+                <a class="nav-link" href="/mainpage">Mainpage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/add" methods="get">Add Message</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/user" sec:authorize="hasAuthority('ADMIN')">User list</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto" sec:authorize="isAuthenticated()">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-4" data-toggle="dropdown" href="#"
+                   sec:authentication="name">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                    <a class="dropdown-item" href="/user/info">My page</a>
+                    <a class="dropdown-item" href="/user/profile">Edit profile</a>
+
+                    <form th:action="@{/logout}" method="post">
+                        <input type="submit" class="dropdown-item" value="Sign Out">
+                    </form>
+
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto" sec:authorize="isAnonymous()">
+            <li class="nav-item">
+                <form th:action="@{/login}" method="post">
+                    <button class="btn btn-primary" type="submit">
+                        Log in
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+</header>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="parts/head::head">
+<body>
+<header th:replace="parts/navbar::navbar"/>
+<table class="table mt-3">
+    <div class="alert-danger" th:if="${error}" th:text="${error}"></div>
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Username</th>
+        <th scope="col">Role</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Remove</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user:${users}">
+        <th scope="row" th:text="${user.id}"></th>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.roles}"></td>
+        <td><a class=nav-link th:href="@{'/user/'+${user.id}}">Edit</a></td>
+        <td ><a class="nav-link" th:href="@{'/user/delete/'+${user.id}}" >Remove</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="parts/footer::footer"/>
+</body>
+</html>

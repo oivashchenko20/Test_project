@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e608748-846d-4de4-9bbf-67ef229c10d6" name="Default Changelist" comment="" />
+    <list default="true" id="9e608748-846d-4de4-9bbf-67ef229c10d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/ControllerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/repos/MessageRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/repos/UserRepos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/MailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_password.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/validEditProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/UserProfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addMessage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/answer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/forgotPassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mainpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +62,46 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="216" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="B:\university\spring progects\copybook\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -23,8 +115,48 @@
   </component>
   <component name="ProjectId" id="1RNs96mQ39ohgXo1cX5OKLCFQZB" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../СА студ/labSA" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.service" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.controllers" />
+      <recent name="com.example.validator" />
+      <recent name="com.example.interfaceValid" />
+      <recent name="com.example.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\university\spring progects\copybook\src\main\resources\templates\parts" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\templates" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\css" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\js" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\css" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -38,6 +170,25 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="copybook" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -49,10 +200,63 @@
       <option name="presentableId" value="Default" />
       <updated>1569518733388</updated>
       <workItem from="1569518736959" duration="18000" />
+      <workItem from="1569524719029" duration="3375000" />
+      <workItem from="1569528136055" duration="11000" />
+      <workItem from="1569568844390" duration="22850000" />
+      <workItem from="1569752183776" duration="11797000" />
+      <workItem from="1569862738706" duration="656000" />
+      <workItem from="1569867769262" duration="1096000" />
+      <workItem from="1569868929649" duration="16242000" />
+      <workItem from="1570102488372" duration="906000" />
+      <workItem from="1570187735489" duration="31274000" />
+      <workItem from="1570431532166" duration="38344000" />
+      <workItem from="1570635425216" duration="6425000" />
+      <workItem from="1570714448422" duration="1765000" />
+      <workItem from="1570721385682" duration="8645000" />
+      <workItem from="1570985468890" duration="20254000" />
+      <workItem from="1571075633705" duration="220000" />
+      <workItem from="1571076613766" duration="15255000" />
+      <workItem from="1571142546257" duration="79000" />
+      <workItem from="1571142772543" duration="26329000" />
+      <workItem from="1571258730501" duration="34000" />
+      <workItem from="1571302652298" duration="24357000" />
+      <workItem from="1571412691592" duration="346000" />
+      <workItem from="1571593902385" duration="5325000" />
+      <workItem from="1571646279086" duration="51452000" />
+      <workItem from="1571911954223" duration="16367000" />
+      <workItem from="1572016016709" duration="27745000" />
+      <workItem from="1572176501836" duration="33024000" />
+      <workItem from="1572336190080" duration="31182000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.map" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="model" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/copybook$Application.ic" NAME="Application Coverage Results" MODIFIED="1569955263333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

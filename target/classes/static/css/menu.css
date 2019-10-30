@@ -1,0 +1,22 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo {
+    color: #007bff;
+
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.nav-link {
+    font-size: 1.3em;
+}
+
+nav li {
+    list-style-type: none;
+}

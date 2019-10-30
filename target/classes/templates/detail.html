@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="parts/head::head"></div>
+    <link rel="stylesheet" type="text/css" href="/css/menu.css"/>
+</head>
+<body>
+<header>
+    <div th:replace="parts/navbar::navbar"></div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <h2 class="mt-4" th:text="${messages.title}"></h2>
+            <hr>
+            <img class="img-fluid rounded" th:src="@{'/img/'+${messages.filename}}" alt="">
+            <hr>
+            <p class="lead-mb-3" th:text="${messages.text}"></p>
+            <form th:action="@{'/mainpage/details/'+${messages.getId()}}" method="post" class="mb-3">
+                <button class="btn btn-primary " th:if="${user.username==messages.getAuthorName()}">Delete message
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div th:replace="parts/footer::footer"></div>
+</footer>
+</body>
+</html>
