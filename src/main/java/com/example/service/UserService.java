@@ -47,7 +47,9 @@ public class UserService implements UserDetailsService {
             return false;
         }
 
-        user.setActive(false);
+        //Gmail blocked heroku
+        user.setActive(true);
+
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
