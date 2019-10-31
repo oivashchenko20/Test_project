@@ -11,6 +11,12 @@ oleksandr.ivashchenko@gmail.com
 
 For installation you need authorize in HerokuApp and start project from repository.
 
+https://test-spring-copybook.herokuapp.com/login
+
+login - admin
+
+password - 123 
+
 ## Functionality
 
 Users in this project have two roles(user,admin). Admin can manipulate User.  

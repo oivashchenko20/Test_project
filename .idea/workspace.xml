@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e608748-846d-4de4-9bbf-67ef229c10d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/04e18680-5a61-4a13-baa4-7cd639276e8b.photo_2019-10-29_12-59-54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/181d04ae-d6a4-4e5d-a976-25153cebd6a7.photo_2019-10-29_12-59-54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/28c01d73-4553-4949-87b4-a15db3791f79.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/42e419b3-1f9c-46cf-a6ab-5abaa07ab6f6.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/4c8983e5-7289-4b02-8c2f-1d27772d4364.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/54ada6b7-f501-4c13-ab47-867f43dd0303.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/743f4080-15d5-4057-92e3-c578d67868cf.Dodge_Challenger_2018_Hellcat_SRT_Widebody_White_564865_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/782047b3-943a-4e41-85d6-0552ad300959.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/83ad82b0-1312-4bbb-951d-5ca32913e534.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/8a039f23-82ec-4490-8580-f74914489aa8.Dodge_Challenger_2018_Hellcat_SRT_Widebody_White_564865_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/a7ced085-555b-4b3c-91ae-186a33c54f58.0_8eb56_842bba74_XL-640x400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/a8626d6a-505d-487b-93c4-8bd82555967a.photo_2019-10-29_23-52-20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/abae2324-9bfa-4a82-9bef-402824449087.0_8eb56_842bba74_XL-640x400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/db90f3b0-ab73-44db-be2e-5f9a42a8bf5b.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/e6704898-8759-4020-ae4c-428358ee4851.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/e6ef1aff-80c2-407b-bcbb-3d4c65267813.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uploads/f894861e-c3d3-4564-9545-65ea16258f63.1969-dodge-charger-rt-A1XP-1024x576-MM-90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/copybook.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_admin.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,6 +196,7 @@
       <workItem from="1572542063746" duration="2033000" />
       <workItem from="1572544854407" duration="5149000" />
       <workItem from="1572553460249" duration="2020000" />
+      <workItem from="1572559659719" duration="415000" />
     </task>
     <servers />
   </component>
