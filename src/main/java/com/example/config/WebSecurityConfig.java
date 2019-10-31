@@ -31,7 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-   
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

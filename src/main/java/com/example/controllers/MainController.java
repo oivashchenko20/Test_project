@@ -30,8 +30,7 @@ public class MainController {
     @Autowired
     private MessageRepos messageRepos;
 
-    @Value("${upload.path}")
-    private String uploadPath;
+    private static String uploadDirectory=System.getProperty("user.dir")+"/uploads";
 
     @GetMapping("/mainpage")
     public String showMainPage(Model model, @AuthenticationPrincipal User user) {
@@ -77,7 +76,7 @@ public class MainController {
         Message message = new Message(text, user, title);
 
         if (file != null && !file.getOriginalFilename().isEmpty()) {
-            File uploadDir = new File(uploadPath);
+            File uploadDir = new File(uploadDirectory);
 
             if (!uploadDir.exists()) {
                 uploadDir.mkdir();
@@ -86,7 +85,7 @@ public class MainController {
             String uuidFile = UUID.randomUUID().toString();
             String resultFilename = uuidFile + "." + file.getOriginalFilename();
 
-            file.transferTo(new File(uploadPath + "/" + resultFilename));
+            file.transferTo(new File(uploadDirectory + "/" + resultFilename));
 
             message.setFilename(resultFilename);
         }
