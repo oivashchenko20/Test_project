@@ -27,6 +27,8 @@ public class UserService implements UserDetailsService {
     @Autowired
     UserRepos userRepos;
 
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -48,7 +50,7 @@ public class UserService implements UserDetailsService {
         user.setActive(false);
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
-        user.setPassword(user.getPassword());
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setFirstName(user.getFirstName());
         user.setLastName(user.getLastName());
         user.setMobile(user.getMobile());
@@ -131,7 +133,7 @@ public class UserService implements UserDetailsService {
 
 
         if (!StringUtils.isEmpty(password)) {
-            user.setPassword(password);
+            user.setPassword(passwordEncoder.encode(password));
         }
 
         if (!StringUtils.isEmpty(firstName)) {
@@ -168,7 +170,7 @@ public class UserService implements UserDetailsService {
                             "Welcome to Copybook. Your new password " + rand +
                             " visit next link:http://https://test-spring-copybook.herokuapp.com//login "
             );
-            user.setPassword(rand.toString());
+            user.setPassword(passwordEncoder.encode(rand.toString()));
 
             userRepos.save(user);
             mailSender.send(user.getEmail(), "Get password", message);
