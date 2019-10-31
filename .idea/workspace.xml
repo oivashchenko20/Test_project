@@ -2,57 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e608748-846d-4de4-9bbf-67ef229c10d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/ControllerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/repos/MessageRepos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/repos/UserRepos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/MailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_password.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/validEditProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/UserProfile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addMessage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/answer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/forgotPassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mainpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/copybook.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/MailConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/config/MailConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/config/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controllers/ControllerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/controllers/ControllerUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controllers/ErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/controllers/ErrorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controllers/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/controllers/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/MailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/MailSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userEdit.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,26 +101,27 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\js" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\css" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\images" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\university\spring progects\copybook" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\templates\parts" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\templates" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources\static\css" />
+      <recent name="B:\university\spring progects\copybook\src\main\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.controllers" />
       <recent name="com.example.validator" />
       <recent name="com.example.interfaceValid" />
       <recent name="com.example.config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="B:\university\spring progects\copybook\src\main\resources\templates\parts" />
-      <recent name="B:\university\spring progects\copybook\src\main\resources\templates" />
-      <recent name="B:\university\spring progects\copybook\src\main\resources\static\css" />
-      <recent name="B:\university\spring progects\copybook\src\main\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="B:\university\spring progects\copybook\src\main\resources\static" />
-      <recent name="B:\university\spring progects\copybook\src\main\resources\static\js" />
-      <recent name="B:\university\spring progects\copybook\src\main\resources\static\css" />
-      <recent name="B:\university\spring progects\copybook\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -227,6 +193,15 @@
       <workItem from="1572016016709" duration="27745000" />
       <workItem from="1572176501836" duration="33024000" />
       <workItem from="1572336190080" duration="31182000" />
+      <workItem from="1572454613132" duration="627000" />
+      <workItem from="1572455567545" duration="48000" />
+      <workItem from="1572466885687" duration="1872000" />
+      <workItem from="1572473764963" duration="211000" />
+      <workItem from="1572476553328" duration="480000" />
+      <workItem from="1572507098986" duration="49000" />
+      <workItem from="1572508438437" duration="764000" />
+      <workItem from="1572535841751" duration="695000" />
+      <workItem from="1572536606564" duration="150000" />
     </task>
     <servers />
   </component>
