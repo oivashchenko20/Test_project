@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e608748-846d-4de4-9bbf-67ef229c10d6" name="Default Changelist" comment="" />
+    <list default="true" id="9e608748-846d-4de4-9bbf-67ef229c10d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +194,7 @@
       <workItem from="1572540800039" duration="275000" />
       <workItem from="1572541515074" duration="274000" />
       <workItem from="1572542063746" duration="2033000" />
-      <workItem from="1572544854407" duration="2512000" />
+      <workItem from="1572544854407" duration="2945000" />
     </task>
     <servers />
   </component>
