@@ -70,7 +70,7 @@ public class UserService implements UserDetailsService {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to Copybook. Please, visit next link: http://test-spring-copybook.herokuapp.com//activate/%s",
+                            "Welcome to Copybook. Please, visit next link: http://test-spring-copybook.herokuapp.com/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );
@@ -167,7 +167,7 @@ public class UserService implements UserDetailsService {
             String message = String.format(
                     "Hello, user \n" +
                             "Welcome to Copybook. Your new password " + rand +
-                            " visit next link:http://https://test-spring-copybook.herokuapp.com//login "
+                            " visit next link:https://test-spring-copybook.herokuapp.com/login "
             );
             user.setPassword(passwordEncoder.encode(rand.toString()));
 
