@@ -4,19 +4,22 @@ import com.example.domain.Message;
 import com.example.domain.User;
 import com.example.repos.MessageRepos;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 import java.util.UUID;
+
 /**
  * This controller can show all information
  * on mainpage and manipulate with articles
@@ -30,7 +33,7 @@ public class MainController {
     @Autowired
     private MessageRepos messageRepos;
 
-    private static String uploadDirectory=System.getProperty("user.dir")+"/uploads";
+    private static String uploadDirectory = System.getProperty("user.dir") + "/uploads";
 
     @GetMapping("/mainpage")
     public String showMainPage(Model model, @AuthenticationPrincipal User user) {
@@ -61,37 +64,48 @@ public class MainController {
     }
 
     @GetMapping("/add")
-    public String Message() {
+    public String Message(Message message, Model model) {
+
+        model.addAttribute("message", message);
+
         return "addMessage";
     }
 
     @PostMapping("/add")
     public String addMessage(
             @AuthenticationPrincipal User user,
-            @RequestParam String text,
-            @RequestParam String title,
-            @RequestParam("file") MultipartFile file
+            @Valid Message message,
+            BindingResult result,
+            @RequestParam("file") MultipartFile file,
+            Model model
     ) throws IOException {
 
-        Message message = new Message(text, user, title);
+        message.setAuthor(user);
 
-        if (file != null && !file.getOriginalFilename().isEmpty()) {
-            File uploadDir = new File(uploadDirectory);
+        if (result.hasErrors()) {
+            Map<String, String> errors = ControllerUtils.getErrors(result);
 
-            if (!uploadDir.exists()) {
-                uploadDir.mkdir();
+            model.mergeAttributes(errors);
+            return "addMessage";
+
+        } else {
+            if (file != null && !file.getOriginalFilename().isEmpty()) {
+                File uploadDir = new File(uploadDirectory);
+
+                if (!uploadDir.exists()) {
+                    uploadDir.mkdir();
+                }
+
+                String uuidFile = UUID.randomUUID().toString();
+                String resultFilename = uuidFile + "." + file.getOriginalFilename();
+
+                file.transferTo(new File(uploadDirectory + "/" + resultFilename));
+
+                message.setFilename(resultFilename);
             }
 
-            String uuidFile = UUID.randomUUID().toString();
-            String resultFilename = uuidFile + "." + file.getOriginalFilename();
-
-            file.transferTo(new File(uploadDirectory + "/" + resultFilename));
-
-            message.setFilename(resultFilename);
+            messageRepos.save(message);
         }
-
-        messageRepos.save(message);
-
         return "addMessage";
     }
 

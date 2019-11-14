@@ -1,5 +1,7 @@
 package com.example.domain;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,7 +11,7 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-
+    @Length(max = 2048, message = "Message too long, max count of symbols 2000")
     private String text;
     private String title;
 

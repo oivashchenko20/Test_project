@@ -53,7 +53,6 @@ public class UserController {
         return "redirect:/user";
     }
 
-
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("{user}")
     public String userEdit(@PathVariable User user, Model model) {
@@ -101,18 +100,20 @@ public class UserController {
         if (!mobile.matches("(?:\\d{3}-){2}\\d{4}")) {
             return "redirect:/user/profile";
         }
+        if (password.length() > 15) {
+            return "redirect:/user/profile";
+        }
 
         userService.updateProfile(user, password, email, firstName, lastName, mobile);
 
         return "redirect:/login";
     }
 
-
     @GetMapping("info")
     public String profile(@AuthenticationPrincipal User user, Model model) {
 
         model.addAttribute("user", user);
-        return "UserProfile";
+        return "userProfile";
     }
 
 }

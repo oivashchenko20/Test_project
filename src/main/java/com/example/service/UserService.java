@@ -13,6 +13,7 @@ import org.springframework.util.StringUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
+
 /**
  * This service show all main realize all main methods with user and articles
  *
@@ -47,8 +48,7 @@ public class UserService implements UserDetailsService {
             return false;
         }
 
-        //Gmail blocked heroku
-        user.setActive(true);
+        user.setActive(false);
 
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
@@ -64,7 +64,6 @@ public class UserService implements UserDetailsService {
         return true;
 
     }
-
 
     private void sendMessage(User user) {
 
@@ -133,7 +132,6 @@ public class UserService implements UserDetailsService {
 
         }
 
-
         if (!StringUtils.isEmpty(password)) {
             user.setPassword(passwordEncoder.encode(password));
         }
@@ -155,7 +153,6 @@ public class UserService implements UserDetailsService {
 
         sendMessage(user);
     }
-
 
     public void setNewPassword(User user, String email) {
 

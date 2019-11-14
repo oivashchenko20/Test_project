@@ -92,7 +92,6 @@ public class RegisterController {
         return "forgotPassword";
     }
 
-
     @GetMapping("/activate/{code}")
     public String activate(Model model, @PathVariable String code) {
         boolean isActivated = userService.activateUser(code);

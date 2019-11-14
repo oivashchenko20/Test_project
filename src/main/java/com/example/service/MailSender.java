@@ -7,6 +7,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+
 /**
  * This service make sending to email notification message
  *
@@ -20,8 +21,6 @@ public class MailSender {
 
     @Value("${spring.mail.username}")
     private String username;
-
-
 
     public void send(String emailTo, String subject, String message) throws MailException {
 

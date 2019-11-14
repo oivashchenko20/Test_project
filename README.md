@@ -1,6 +1,8 @@
 # Project information   
 This project is the test-project for Infostroy Technologies Inc company
 
+
+
 ## Author
 Ivaschenko Oleksandr
 
@@ -9,14 +11,31 @@ oleksandr.ivashchenko@gmail.com
 
 ## Installation
 
-For installation you need authorize in HerokuApp and start project from repository.
+Step 1. Clone project from GitHub
 
-https://test-spring-copybook.herokuapp.com/login
+Step 2. Install heroku util for deploy project to heroku
+
+Step 3. Sign up in Heroku
+
+Step 4. Go to project folder and run console (cmd)
+
+Step 5. Write next commands
+
+a)heroku login
+
+b)git clone https://git.heroku.com/test-spring-copybook.git
+
+c)git push heroku master
+
+d)heroku open
+
+In the next type you can use this link https://test-spring-copybook.herokuapp.com/login
+
+## Test data
 
 login - admin
 
 password - 123 
-
 ## Functionality
 
 Users in this project have two roles(user,admin). Admin can manipulate User.  

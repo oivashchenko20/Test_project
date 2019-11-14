@@ -8,10 +8,7 @@ import java.util.List;
 
 public interface MessageRepos extends CrudRepository<Message, Integer> {
 
-    List<Message> findByTitle(String title);
-
     List<Message> findAll();
 
-    Message deleteByAuthor(User author);
 
 }

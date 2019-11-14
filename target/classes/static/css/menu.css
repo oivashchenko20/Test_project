@@ -20,3 +20,7 @@ body {
 nav li {
     list-style-type: none;
 }
+dropdown-menu
+{
+    z-index: auto;
+}

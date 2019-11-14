@@ -3,7 +3,7 @@ create sequence hibernate_sequence start 1 increment 1;
 create table message
 (
     id       int4 not null,
-    filename varchar(255),
+    filename varchar(2048),
     text     varchar(2048),
     title    varchar(255),
     id_user  int4,
